@@ -368,6 +368,10 @@ export default function RoutineDemo() {
 
   return (
     <div className="max-w-xl mx-auto p-4 space-y-6">
+      <div className="text-center">
+         <h1 className="text-3xl font-bold">🌟 Tiny Wins</h1>
+         <p className="text-gray-600">Progress, one gentle step at a time.</p>
+       </div>
       
       <div className="text-right flex justify-end space-x-2">
         <button
