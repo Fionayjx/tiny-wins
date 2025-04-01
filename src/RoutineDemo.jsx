@@ -435,22 +435,46 @@ export default function RoutineDemo() {
 
       {viewMode === "daily" && done && (
         <div className="bg-white p-4 rounded-xl shadow space-y-4 text-center">
-          <h2 className="text-xl font-semibold">🎉 You’ve set your flow!</h2>
-          <ul className="list-disc text-left pl-6 space-y-2">
+          <h2 className="text-xl font-semibold">🎉 You've set your flow!</h2>
+          <ul className="list-none text-left space-y-3 pl-2">
             {anchors.map((task, i) =>
               task ? (
-                <li
-                  key={i}
-                  onClick={() => toggleCompleted(i)}
-                  className={`cursor-pointer ${completed[i] ? "line-through text-gray-500" : ""}`}
-                >
-                  {task}
+                <li key={i} className="flex items-center gap-3">
+                  <div className="relative inline-block">
+                    <input
+                      type="checkbox"
+                      id={`task-${i}`}
+                      checked={completed[i]}
+                      onChange={() => toggleCompleted(i)}
+                      className="appearance-none h-5 w-5 border border-gray-300 rounded checked:bg-blue-500 checked:border-blue-500 transition-colors cursor-pointer"
+                    />
+                    {completed[i] && (
+                      <svg 
+                        className="absolute inset-0 w-5 h-5 text-white pointer-events-none" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    )}
+                  </div>
+                  <label 
+                    htmlFor={`task-${i}`}
+                    className={`cursor-pointer ${completed[i] ? "line-through text-gray-500" : ""}`}
+                  >
+                    {task}
+                  </label>
                 </li>
               ) : null
             )}
           </ul>
 
-          <p className="italic">🌱 Exploration: {explore || "Not specified"}</p>
+          <p className="italic mt-4">🌱 Exploration: {explore || "Not specified"}</p>
 
           <div className="text-left space-y-4">
             <h2 className="font-semibold">📝 How did you feel?</h2>
@@ -550,11 +574,25 @@ export default function RoutineDemo() {
                 <p><strong>✅ Anchor Tasks:</strong></p>
                 <ul className="list-disc pl-6">
                   {entry.anchors?.map((task, i) => (
-                    <li 
-                      key={i} 
-                      className={entry.completedList && entry.completedList[i] ? "line-through text-gray-500" : ""}
-                    >
-                      {task}
+                    <li key={i} className="flex items-start gap-2">
+                      <div className="mt-0.5">
+                        <div 
+                          className={`h-4 w-4 border rounded ${
+                            entry.completedList && entry.completedList[i] 
+                              ? "bg-blue-500 border-blue-500" 
+                              : "border-gray-400"
+                          }`}
+                        >
+                          {entry.completedList && entry.completedList[i] && (
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-4 h-4">
+                              <path fillRule="evenodd" d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z" clipRule="evenodd" />
+                            </svg>
+                          )}
+                        </div>
+                      </div>
+                      <span className={entry.completedList && entry.completedList[i] ? "line-through text-gray-500" : ""}>
+                        {task}
+                      </span>
                     </li>
                   ))}
                 </ul>
