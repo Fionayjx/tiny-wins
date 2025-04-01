@@ -1,5 +1,7 @@
 # Tiny Wins 🌟
 
+![Visitors](https://visitor-badge.glitch.me/badge?page_id=Fionayjx.tiny-wins)
+
 A simple, minimalist habit tracker that helps you focus on daily progress and celebrate your small victories.
 
 ## About

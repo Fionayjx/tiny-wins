@@ -371,6 +371,11 @@ export default function RoutineDemo() {
       <div className="text-center">
         <h1 className="text-3xl font-bold">🌟 Tiny Wins</h1>
         <p className="text-gray-600">Progress, one gentle step at a time.</p>
+        <img 
+          src="https://visitor-badge.glitch.me/badge?page_id=Fionayjx.tiny-wins-app" 
+          alt="Visitor Counter" 
+          className="mt-2 opacity-60"
+        />
       </div>
 
       <div className="text-right flex justify-end space-x-2">
