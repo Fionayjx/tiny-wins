@@ -1,7 +1,5 @@
 # Tiny Wins 🌟
 
-![Visitors](https://api.visitorbadge.io/api/visitors?path=Fionayjx.tiny-wins&countColor=%23263759)
-
 A simple, minimalist habit tracker that helps you focus on daily progress and celebrate your small victories.
 
 ## About

@@ -718,13 +718,14 @@ export default function RoutineDemo() {
         </div>
       )}
 
-      <div className="text-center mt-8 pt-4 border-t border-gray-200">
-        <p className="text-xs text-gray-500">
+      <div className="text-center mt-4 pt-2 border-t border-gray-100">
+        <p className="text-[10px] text-gray-400">
+          <span className="inline-block"></span>
           <img 
-            src="https://api.visitorbadge.io/api/visitors?path=Fionayjx.tiny-wins&countColor=%23263759" 
+            src="https://api.visitorbadge.io/api/visitors?path=Fionayjx.tiny-wins&countColor=%23263759&labelColor=transparent&countBackground=transparent" 
             alt="Visitor Counter"
-            width="80" 
-            className="inline-block ml-1 opacity-30"
+            width="60" 
+            className="inline-block align-middle -mt-[2px] opacity-30"
           />
         </p>
       </div>
