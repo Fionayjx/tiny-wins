@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/tiny-wins/static/css/main.028fe6e8.css",
-    "main.js": "/tiny-wins/static/js/main.d3728206.js",
+    "main.css": "/tiny-wins/static/css/main.cb7152b2.css",
+    "main.js": "/tiny-wins/static/js/main.e5c16dbe.js",
     "index.html": "/tiny-wins/index.html",
-    "main.028fe6e8.css.map": "/tiny-wins/static/css/main.028fe6e8.css.map",
-    "main.d3728206.js.map": "/tiny-wins/static/js/main.d3728206.js.map"
+    "main.cb7152b2.css.map": "/tiny-wins/static/css/main.cb7152b2.css.map",
+    "main.e5c16dbe.js.map": "/tiny-wins/static/js/main.e5c16dbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.028fe6e8.css",
-    "static/js/main.d3728206.js"
+    "static/css/main.cb7152b2.css",
+    "static/js/main.e5c16dbe.js"
   ]
 }
