@@ -368,16 +368,7 @@ export default function RoutineDemo() {
 
   return (
     <div className="max-w-xl mx-auto p-4 space-y-6">
-      <div className="text-center">
-        <h1 className="text-3xl font-bold">🌟 Tiny Wins</h1>
-        <p className="text-gray-600">Progress, one gentle step at a time.</p>
-        <img 
-          src="https://visitor-badge.glitch.me/badge?page_id=Fionayjx.tiny-wins-app" 
-          alt="Visitor Counter" 
-          className="mt-2 opacity-60"
-        />
-      </div>
-
+      
       <div className="text-right flex justify-end space-x-2">
         <button
           className={`text-sm px-2 py-1 rounded ${viewMode === "daily" ? "bg-blue-500 text-white" : "text-blue-500 hover:bg-blue-100"}`}
@@ -726,6 +717,17 @@ export default function RoutineDemo() {
           </div>
         </div>
       )}
+
+      <div className="text-center mt-8 pt-4 border-t border-gray-200">
+        <p className="text-xs text-gray-500">
+          <img 
+            src="https://api.visitorbadge.io/api/visitors?path=Fionayjx.tiny-wins&countColor=%23263759" 
+            alt="Visitor Counter"
+            width="80" 
+            className="inline-block ml-1 opacity-30"
+          />
+        </p>
+      </div>
     </div>
   );
 }
