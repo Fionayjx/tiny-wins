@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tiny-wins/static/css/main.243c6ef2.css",
+    "main.js": "/tiny-wins/static/js/main.807c7d5b.js",
+    "index.html": "/tiny-wins/index.html",
+    "main.243c6ef2.css.map": "/tiny-wins/static/css/main.243c6ef2.css.map",
+    "main.807c7d5b.js.map": "/tiny-wins/static/js/main.807c7d5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.243c6ef2.css",
+    "static/js/main.807c7d5b.js"
+  ]
+}
